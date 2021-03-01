@@ -61,6 +61,8 @@ namespace ProjectWpf {
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.0.0.0")]
         public static void Main() {
+            SplashScreen splashScreen = new SplashScreen("img/splashscreen.png");
+            splashScreen.Show(true);
             ProjectWpf.App app = new ProjectWpf.App();
             app.InitializeComponent();
             app.Run();

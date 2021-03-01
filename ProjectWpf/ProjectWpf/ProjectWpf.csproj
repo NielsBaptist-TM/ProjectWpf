@@ -94,5 +94,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\arts_literature.jpg" />
+    <Resource Include="img\entertainment.jpg" />
+    <Resource Include="img\geography.jpg" />
+    <Resource Include="img\history.jpg" />
+    <Resource Include="img\science_nature.jpg" />
+    <Resource Include="img\sports.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="img\splashscreen.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
