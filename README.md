@@ -5,15 +5,18 @@ Resources:
 - Trivial Pursuit on Wikipedia: https://nl.wikipedia.org/wiki/Trivial_Pursuit
 
 
-WPF Trivial Pursuit uitwerking 
-Categorieën & Index
+WPF Trivial Pursuit uitwerking.
+
+Categorieën & Index:
 -	1: History
 -	2: Arts & literature 
 -	3: Sports & leisure
 -	4: Science & nature
 -	5: Geography 
 -	6: Entertainment
-Spel werking
+
+Spel werking.
+
 1.	Om te beginnen krijg je een lijst van een leeg veld en een te kiezen kleur. Hier moet je minstens 2 en maximum 6 namen en kleuren invullen. Er kunnen geen 2 mensen dezelfde kleur hebben, iemand drukt op “volgende”.
 a.	Speler gegevens worden in de databank opgeslagen.
 
