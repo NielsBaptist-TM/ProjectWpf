@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="#207178"></Setter>
+                <Setter Property="Foreground" Value="#F5E9BE"></Setter>
+                <Setter Property="FontSize" Value="40"></Setter>
+                <Setter Property="FontWeight" Value="Bold"></Setter>
+            </Style>
+        </Grid.Resources>
+        <Button x:Name="BtnNewGame" Grid.Column="0" Click="BtnNewGame_Click">Nieuw spel</Button>
+        <Button x:Name="BtnHighscores" Grid.Column="1" Click="BtnHighscores_Click">Highscores</Button>
     </Grid>
 </Window>

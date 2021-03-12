@@ -24,5 +24,19 @@ namespace ProjectWpf
         {
             InitializeComponent();
         }
+
+        private void BtnNewGame_Click(object sender, RoutedEventArgs e)
+        {
+            ReadyPlayers ReadyPlayers = new ReadyPlayers();
+            ReadyPlayers.Show();
+            this.Close();
+        }
+
+        private void BtnHighscores_Click(object sender, RoutedEventArgs e)
+        {
+            Highscores Highscores = new Highscores();
+            Highscores.Show();
+            this.Close();
+        }
     }
 }
