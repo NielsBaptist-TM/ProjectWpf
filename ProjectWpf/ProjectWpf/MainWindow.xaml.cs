@@ -23,11 +23,13 @@ namespace ProjectWpf
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void BtnNewGame_Click(object sender, RoutedEventArgs e)
         {
             ReadyPlayers ReadyPlayers = new ReadyPlayers();
+            ReadyPlayers.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             ReadyPlayers.Show();
             this.Close();
         }
@@ -35,6 +37,7 @@ namespace ProjectWpf
         private void BtnHighscores_Click(object sender, RoutedEventArgs e)
         {
             Highscores Highscores = new Highscores();
+            Highscores.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             Highscores.Show();
             this.Close();
         }

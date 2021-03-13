@@ -45,8 +45,14 @@ namespace ProjectWpf
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MainWindow MainWindow = new MainWindow();
+            MainWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             MainWindow.Show();
             this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //spelers invoegen in de databank
         }
     }
 }

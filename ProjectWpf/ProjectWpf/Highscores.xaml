@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectWpf"
         mc:Ignorable="d"
-        Title="Highscores" Height="450" Width="800">
+        Title="Highscores" Height="1080" Width="1920">
     <Grid Loaded="Grid_Loaded">
         <Grid.Resources>
             <Style TargetType="Button">
@@ -15,8 +15,8 @@
                 <Setter Property="FontWeight" Value="Bold"></Setter>
             </Style>
         </Grid.Resources>
-        <ListBox x:Name="LbHighscores" HorizontalAlignment="Center" Height="314" Margin="153,73,168,32" VerticalAlignment="Center" Width="471" Background="White" FontSize="16"/>
-        <Button x:Name="BtnBack" Content="Terug" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Height="42" Click="BtnBack_Click"/>
-        <Label Content="Highscores" HorizontalAlignment="Left" Margin="268,10,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <ListBox x:Name="LbHighscores" HorizontalAlignment="Center" Height="340" Margin="268,332,251,377" VerticalAlignment="Center" Width="1393" Background="White" FontSize="36"/>
+        <Button x:Name="BtnBack" Content="Terug" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="253" Height="114" Click="BtnBack_Click"/>
+        <Label Content="Highscores" HorizontalAlignment="Left" Margin="268,116,0,0" VerticalAlignment="Top" FontSize="48" Height="124" Width="375"/>
     </Grid>
 </Window>

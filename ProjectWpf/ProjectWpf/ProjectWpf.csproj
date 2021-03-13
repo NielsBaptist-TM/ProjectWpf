@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Connection.cs" />
     <Compile Include="ReadyPlayers.xaml.cs">
       <DependentUpon>ReadyPlayers.xaml</DependentUpon>
     </Compile>
@@ -117,7 +118,19 @@
     <Resource Include="img\sports.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <SplashScreen Include="img\splashscreen.png" />
+    <None Include="img\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="img\splashcreen_self.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="splashcreen_self.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="220px-Trivialpursuit_Token.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

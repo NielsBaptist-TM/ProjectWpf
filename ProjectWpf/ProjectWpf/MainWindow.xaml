@@ -5,11 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectWpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1080" Width="1920" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="960*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>
@@ -22,7 +21,23 @@
                 <Setter Property="FontWeight" Value="Bold"></Setter>
             </Style>
         </Grid.Resources>
-        <Button x:Name="BtnNewGame" Grid.Column="0" Click="BtnNewGame_Click">Nieuw spel</Button>
-        <Button x:Name="BtnHighscores" Grid.Column="1" Click="BtnHighscores_Click">Highscores</Button>
+        <Grid.Effect>
+            <BlurEffect Radius="0"/>
+        </Grid.Effect>
+        <Grid.Background>
+            <ImageBrush ImageSource="background.jpg"/>
+        </Grid.Background>
+        <Button x:Name="BtnNewGame" Grid.Row="0" Click="BtnNewGame_Click" Margin="139,612,1068,166" Background="WhiteSmoke" Foreground="Black">Nieuw spel</Button>
+        <Button x:Name="BtnHighscores" Click="BtnHighscores_Click" Margin="982,606,199,166" RenderTransformOrigin="0.5,0.5" Foreground="Black" Background="White">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.1"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform> Highscores
+        </Button>
+        <Label Content="Trivial pursuit: The game" FontSize="125" Margin="139,205,172,632" FontFamily="Verdana" RenderTransformOrigin="0.506,1.29" Foreground="White"/>
     </Grid>
 </Window>

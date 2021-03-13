@@ -36,6 +36,7 @@ namespace ProjectWpf
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
             MainWindow MainWindow = new MainWindow();
+            MainWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             MainWindow.Show();
             this.Close();
         }
