@@ -21,30 +21,12 @@ namespace ProjectWpf
 {
     class Connection
     {
-        private Connection connection;
-        private string server;
-        private string database;
-        private string uid;
-        private string password;
-
-        //Constructor
-       /* public DBConnect()
-        {
-            Initialize();
-        }*/
 
         //Initialize values
         private void Initialize()
         {
-            server = "192.168.20.98:3306";
-            database = "nielsbaptist_trivialPursuit";
-            uid = "nielsbaptist";
-            password = "W2IUJDXgU52w";
-            string connectionString;
-            connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-
-/*            connection = new SqlConnection(connectionString);
-*/        }
+            
+        }
 
     }
 }

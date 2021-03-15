@@ -56,6 +56,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Connection.cs" />
+    <Compile Include="Piece.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Question.cs" />
+    <Compile Include="QuestionWindow.xaml.cs">
+      <DependentUpon>QuestionWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ReadyPlayers.xaml.cs">
       <DependentUpon>ReadyPlayers.xaml</DependentUpon>
     </Compile>
@@ -78,6 +84,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="QuestionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ReadyPlayers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -125,9 +135,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="splashcreen_self.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="220px-Trivialpursuit_Token.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="background.jpg" />
