@@ -97,10 +97,24 @@ namespace ProjectWpf
 
             if (players.Count > 0)
             {
-                QuestionWindow QuestionWindow = new QuestionWindow();
-                QuestionWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-                QuestionWindow.Show();
-                this.Close();
+                if (CbUser1.SelectedItem != CbUser2.SelectedItem || CbUser1 == null && CbUser1.SelectedItem != CbUser3.SelectedItem || CbUser1 == null &&
+                    CbUser1.SelectedItem != CbUser4.SelectedItem || CbUser1 == null && CbUser1.SelectedItem != CbUser5.SelectedItem || CbUser1 == null &&
+                    CbUser1.SelectedItem != CbUser6.SelectedItem || CbUser1 == null && CbUser2.SelectedItem != CbUser3.SelectedItem || CbUser2 == null &&
+                    CbUser2.SelectedItem != CbUser4.SelectedItem || CbUser2 == null && CbUser2.SelectedItem != CbUser5.SelectedItem || CbUser2 == null &&
+                    CbUser2.SelectedItem != CbUser6.SelectedItem || CbUser2 == null && CbUser3.SelectedItem != CbUser4.SelectedItem || CbUser3 == null &&
+                    CbUser3.SelectedItem != CbUser5.SelectedItem || CbUser3 == null && CbUser3.SelectedItem != CbUser6.SelectedItem || CbUser3 == null &&
+                    CbUser4.SelectedItem != CbUser5.SelectedItem || CbUser4 == null && CbUser4.SelectedItem != CbUser6.SelectedItem || CbUser4 == null &&
+                    CbUser5.SelectedItem != CbUser6.SelectedItem )
+                {
+                    QuestionWindow QuestionWindow = new QuestionWindow();
+                    QuestionWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                    QuestionWindow.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Zorg dat er geen spelers met dezelfde kleur zijn!");
+                }
             }
             else
             {

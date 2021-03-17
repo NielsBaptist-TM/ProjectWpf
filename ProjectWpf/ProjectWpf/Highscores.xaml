@@ -16,8 +16,8 @@
             </Style>
         </Grid.Resources>
         <Button x:Name="BtnBack" Content="Terug" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="253" Height="114" Click="BtnBack_Click"/>
-        <Label Content="Highscores" HorizontalAlignment="Left" Margin="268,116,0,0" VerticalAlignment="Top" FontSize="48" Height="124" Width="375"/>
-        <ListView x:Name="LbHighscores" HorizontalAlignment="Left" Height="668" Margin="222,245,0,0" VerticalAlignment="Top" Width="1396" FontSize="35">
+        <Label Content="Highscores" HorizontalAlignment="Left" Margin="805,67,0,0" VerticalAlignment="Top" FontSize="48" Height="105" Width="267"/>
+        <ListView x:Name="LbHighscores" HorizontalAlignment="Left" Height="668" Margin="348,227,0,0" VerticalAlignment="Top" Width="1198" FontSize="35">
             <ListView.View>
                 <GridView>
                     <GridViewColumn x:Name="spelerClm" DisplayMemberBinding="{Binding Path=Name}" Header="Speler" Width="600"/>

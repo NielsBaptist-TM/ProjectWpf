@@ -56,5 +56,10 @@ namespace ProjectWpf
             MainWindow.Show();
             this.Close();
         }
+
+        private void LbHighscores_SelectionChanged()
+        {
+
+        }
     }
 }
