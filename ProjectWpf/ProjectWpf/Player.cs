@@ -14,21 +14,21 @@ namespace ProjectWpf
         private string _name;
         private string _colour;
         private int _turns;
-        private List<Piece> _pieces;
         public Player(string name, string colour, int turns)
         {
             _name = name;
             _colour = colour;
             _turns = turns;
-            _pieces = new List<Piece>();
+            insert(name, colour);
         }
 
-        public void insert()
+        public void insert(string name, string colour)
         {
             SqlConnection SqlConnection = new SqlConnection("Data Source=r0793266.database.windows.net; Initial Catalog = SQLDBWPF; Persist Security Info = True; User ID = admin2ITF; Password = Password2ITF");
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = SqlConnection;
-            cmd.CommandText = "insert into Players values('" + name + "','" + colour + "')";
+            cmd.CommandText = "insert into Players (name, colour, active, turns) " +
+                "values('" + name + "','" + colour + "','" + Convert.ToInt16(1) + "','" + Convert.ToInt16(0) + "')";
             SqlConnection.Open();
             cmd.ExecuteNonQuery();
             SqlConnection.Close();
@@ -48,11 +48,6 @@ namespace ProjectWpf
         {
             get { return _turns; }
             set { _turns = value; }
-        }
-        public List<Piece> pieces
-        {
-            get { return _pieces; }
-            set { _pieces = value; }
         }
     }
 }

@@ -46,7 +46,10 @@ namespace ProjectWpf
             {
                 while (reader.Read())
                 {
-                    DgvPLayers.Items.Add(("{0}\t{1}", reader.GetString(0), reader.GetString(1)));
+                    string name = reader["name"].ToString();
+                    string colour = reader["colour"].ToString();
+                    string turns = reader["turns"].ToString();
+                    Convert.ToInt32(turns);
                 }
             }
             SqlConnection.Close();

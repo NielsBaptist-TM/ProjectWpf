@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectWpf"
         mc:Ignorable="d"
-        Title="Highscores" Height="1080" Width="1920">
+        Title="Highscores" Height="1080" Width="1920" WindowState="Maximized">
     <Grid Loaded="Grid_Loaded">
         <Grid.Resources>
             <Style TargetType="Button">
