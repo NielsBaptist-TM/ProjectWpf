@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="QuestionWindow" Height="1080" Width="1920" WindowState="Maximized">
     <Grid Loaded="Grid_Loaded">
-        <DataGrid x:Name="DgvPLayers" HorizontalAlignment="Left" Height="553" Margin="10,10,0,0" VerticalAlignment="Top" Width="361"/>
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="#207178"></Setter>
+                <Setter Property="Foreground" Value="#F5E9BE"></Setter>
+                <Setter Property="FontSize" Value="25"></Setter>
+                <Setter Property="FontWeight" Value="Bold"></Setter>
+            </Style>
+        </Grid.Resources>
+        
+        <ListView x:Name="LbPlayers" HorizontalAlignment="Left" Height="257" Margin="36,755,0,0" VerticalAlignment="Top" Width="592" FontSize="35">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn x:Name="spelerClm" DisplayMemberBinding="{Binding Path=Name}" Header="Speler" Width="200"/>
+                    <GridViewColumn x:Name="kleurClm" DisplayMemberBinding="{Binding Path=Colour}" Header="Kleur" Width="200"/>
+                    <GridViewColumn x:Name="TurnsClm" DisplayMemberBinding="{Binding Path=Turns}" Header="Beurten" Width="200"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button VerticalAlignment="Top" Width="281" Height="105"  Content="Vorige" HorizontalAlignment="Left" Margin="36,39,0,0" Click="Button_Click"/>
+        <Button x:Name="BtnNext" VerticalAlignment="Top" Width="281" Height="105"  Content="Volgende" HorizontalAlignment="Left" Margin="1569,39,0,0" Click="BtnNext_Click"/>
     </Grid>
 </Window>

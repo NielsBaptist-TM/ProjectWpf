@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace ProjectWpf
 {
@@ -26,11 +27,26 @@ namespace ProjectWpf
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            LbHighscores.Items.Add("Naam \t Beurten");
-            LbHighscores.Items.Add("----------------");
-            LbHighscores.Items.Add("Niels \t 12");
-            LbHighscores.Items.Add("Ferre \t 13");
-            LbHighscores.Items.Add("Koen \t 16");
+
+
+            //fill the grid with players items from the database
+            SqlConnection SqlConnection = new SqlConnection("Data Source=r0793266.database.windows.net; Initial Catalog = SQLDBWPF; Persist Security Info = True; User ID = admin2ITF; Password = Password2ITF");
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = SqlConnection;
+            cmd.CommandText = "select distinct(name), turns from Players order by turns";
+            SqlConnection.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    string name = reader["name"].ToString();
+                    int turns = Convert.ToInt32(reader["turns"]);
+                    var row = new { Name = name, Turns = turns };
+                    LbHighscores.Items.Add(row);
+                }
+            }
+            SqlConnection.Close();
         }
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)

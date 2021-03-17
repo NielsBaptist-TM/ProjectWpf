@@ -28,7 +28,7 @@ namespace ProjectWpf
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = SqlConnection;
             cmd.CommandText = "insert into Players (name, colour, active, turns) " +
-                "values('" + name + "','" + colour + "','" + Convert.ToInt16(1) + "','" + Convert.ToInt16(0) + "')";
+                "values('" + name + "','" + colour + "','" + 1 + "','" + 0 + "')";
             SqlConnection.Open();
             cmd.ExecuteNonQuery();
             SqlConnection.Close();

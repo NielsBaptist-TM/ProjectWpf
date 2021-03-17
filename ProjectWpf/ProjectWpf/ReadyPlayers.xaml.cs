@@ -60,38 +60,38 @@ namespace ProjectWpf
                 if (!String.IsNullOrEmpty(TxtUsername1.Text))
                 {
                     string username1 = TxtUsername1.Text;
-                    Player player1 = new Player(TxtUsername1.Text, CbUser1.SelectedValue.ToString(), 0);
-                    players.Add(player1);
+                    player = new Player(TxtUsername1.Text, CbUser1.SelectedValue.ToString(), 0);
+                    players.Add(player);
                 }
                 if (!String.IsNullOrEmpty(TxtUsername2.Text))
                 {
                     string username2 = TxtUsername2.Text;
-                    Player player2 = new Player(TxtUsername2.Text, CbUser2.SelectedValue.ToString(), 0);
-                    players.Add(player2);
+                    Player player = new Player(TxtUsername2.Text, CbUser2.SelectedValue.ToString(), 0);
+                    players.Add(player);
                 }
                 if (!String.IsNullOrEmpty(TxtUsername3.Text))
                 {
                     string username3 = TxtUsername3.Text; 
-                    Player player3 = new Player(TxtUsername3.Text, CbUser3.SelectedValue.ToString(), 0);
-                    players.Add(player3);
+                    Player player = new Player(TxtUsername3.Text, CbUser3.SelectedValue.ToString(), 0);
+                    players.Add(player);
                 }
                 if (!String.IsNullOrEmpty(TxtUsername4.Text))
                 {
                     string username4 = TxtUsername3.Text;
-                    Player player4 = new Player(TxtUsername4.Text, CbUser4.SelectedValue.ToString(), 0);
-                    players.Add(player4);
+                    Player player = new Player(TxtUsername4.Text, CbUser4.SelectedValue.ToString(), 0);
+                    players.Add(player);
                 }
                 if (!String.IsNullOrEmpty(TxtUsername5.Text))
                 {
                     string username5 = TxtUsername5.Text;
-                    Player player5 = new Player(TxtUsername5.Text, CbUser3.SelectedValue.ToString(), 0);
-                    players.Add(player5);
+                    Player player = new Player(TxtUsername5.Text, CbUser3.SelectedValue.ToString(), 0);
+                    players.Add(player);
                 }
                 if (!String.IsNullOrEmpty(TxtUsername6.Text))
                 {
                     string username6 = TxtUsername6.Text;
-                    Player player6 = new Player(TxtUsername6.Text, CbUser6.SelectedValue.ToString(), 0);
-                    players.Add(player6);
+                    Player player = new Player(TxtUsername6.Text, CbUser6.SelectedValue.ToString(), 0);
+                    players.Add(player);
                 }
             }
 
@@ -99,7 +99,6 @@ namespace ProjectWpf
             {
                 QuestionWindow QuestionWindow = new QuestionWindow();
                 QuestionWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-                Application.Current.Resources["players"] = players;
                 QuestionWindow.Show();
                 this.Close();
             }

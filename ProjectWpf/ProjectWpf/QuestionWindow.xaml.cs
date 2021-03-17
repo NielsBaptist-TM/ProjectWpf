@@ -39,7 +39,7 @@ namespace ProjectWpf
             SqlConnection SqlConnection = new SqlConnection("Data Source=r0793266.database.windows.net; Initial Catalog = SQLDBWPF; Persist Security Info = True; User ID = admin2ITF; Password = Password2ITF");
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = SqlConnection;
-            cmd.CommandText = "select name, colour from Players where active = 1";
+            cmd.CommandText = "select name, colour, turns from Players where active = 1";
             SqlConnection.Open();
             SqlDataReader reader = cmd.ExecuteReader();
             if (reader.HasRows)
@@ -48,11 +48,29 @@ namespace ProjectWpf
                 {
                     string name = reader["name"].ToString();
                     string colour = reader["colour"].ToString();
-                    string turns = reader["turns"].ToString();
-                    Convert.ToInt32(turns);
+                    int turns = Convert.ToInt32(reader["turns"]);
+                    /*LbPlayers.Items.Add(name + "\t" + colour + "\t" + turns);*/
+
+                    var row = new { Name = name, Colour = colour, Turns = turns };
+                    LbPlayers.Items.Add(row);
                 }
             }
             SqlConnection.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //vorige 
+            ReadyPlayers readyPlayers = new ReadyPlayers();
+            readyPlayers.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            readyPlayers.Show();
+            this.Close();
+        }
+
+        private void BtnNext_Click(object sender, RoutedEventArgs e)
+        {
+            //volgende 
+            
         }
     }
 }

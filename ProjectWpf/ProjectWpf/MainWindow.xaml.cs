@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace ProjectWpf
 {
@@ -23,7 +25,7 @@ namespace ProjectWpf
         public MainWindow()
         {
             InitializeComponent();
-
+            inactiveUsers();
         }
 
         private void BtnNewGame_Click(object sender, RoutedEventArgs e)
@@ -40,6 +42,18 @@ namespace ProjectWpf
             Highscores.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             Highscores.Show();
             this.Close();
+        }
+
+        public void inactiveUsers()
+        {
+            SqlConnection SqlConnection = new SqlConnection("Data Source=r0793266.database.windows.net; Initial Catalog = SQLDBWPF; Persist Security Info = True; User ID = admin2ITF; Password = Password2ITF");
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = SqlConnection;
+            cmd.CommandText = "update Players " +
+                "set active = '" + 0 + "' where active = '" + 1 + "'";
+            SqlConnection.Open();
+            cmd.ExecuteNonQuery();
+            SqlConnection.Close();
         }
     }
 }
