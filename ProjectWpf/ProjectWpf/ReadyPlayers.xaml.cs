@@ -39,7 +39,8 @@ namespace ProjectWpf
                 Colours.Add(Color.FromRgb(177, 22, 219));
             };
             //Setting content of comboboxes
-            CbUser1.ItemsSource = typeof(Colors).GetProperties();
+            CbUser1.ItemsSource = typeof(
+                Colors).GetProperties();
             CbUser2.ItemsSource = typeof(Colors).GetProperties();
             CbUser3.ItemsSource = typeof(Colors).GetProperties();
         }
@@ -74,13 +75,31 @@ namespace ProjectWpf
                     Player player3 = new Player(TxtUsername3.Text, CbUser3.SelectedValue.ToString(), 0);
                     players.Add(player3);
                 }
+                if (!String.IsNullOrEmpty(TxtUsername4.Text))
+                {
+                    string username4 = TxtUsername3.Text;
+                    Player player4 = new Player(TxtUsername4.Text, CbUser4.SelectedValue.ToString(), 0);
+                    players.Add(player4);
+                }
+                if (!String.IsNullOrEmpty(TxtUsername5.Text))
+                {
+                    string username5 = TxtUsername5.Text;
+                    Player player5 = new Player(TxtUsername5.Text, CbUser3.SelectedValue.ToString(), 0);
+                    players.Add(player5);
+                }
+                if (!String.IsNullOrEmpty(TxtUsername6.Text))
+                {
+                    string username6 = TxtUsername6.Text;
+                    Player player6 = new Player(TxtUsername6.Text, CbUser6.SelectedValue.ToString(), 0);
+                    players.Add(player6);
+                }
             }
 
             if (players.Count > 0)
             {
                 QuestionWindow QuestionWindow = new QuestionWindow();
                 QuestionWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-                QuestionWindow.DataContext = this;
+                Application.Current.Resources["players"] = players;
                 QuestionWindow.Show();
                 this.Close();
             }

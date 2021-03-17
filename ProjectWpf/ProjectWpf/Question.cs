@@ -14,7 +14,6 @@ namespace ProjectWpf
         private string _wrongAnswer1;
         private string _wrongAnswer2;
         private string _wrongAnswer3;
-
         public Question(string category, string question, string right_answer, string wrongAnswer1, string wrongAnswer2, string wrongAnswer3)
         {
             _category = category;
@@ -24,19 +23,16 @@ namespace ProjectWpf
             _wrongAnswer2 = wrongAnswer2;
             _wrongAnswer3 = wrongAnswer3;
         }
-
         public string category
         {
             get { return _category; }
             set { _category = value; }
         }
-
         public string question
         {
             get { return _question; }
             set { _question = value; }
         }
-
         public string right_answer
         {
             get { return _right_answer; }
@@ -47,7 +43,6 @@ namespace ProjectWpf
             get { return _wrongAnswer1; }
             set { _wrongAnswer1 = value; }
         }
-
         public string wrongAnswer2
         {
             get { return _wrongAnswer2; }

@@ -15,15 +15,15 @@
                 <Setter Property="FontWeight" Value="Bold"></Setter>
             </Style>
         </Grid.Resources>
-        <Rectangle Fill="White" HorizontalAlignment="Left" Height="248" Margin="331,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
-        <Label Content="Naam" HorizontalAlignment="Left" Margin="470,270,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="125"/>
-        <TextBox x:Name="TxtUsername1" HorizontalAlignment="Left" Height="62" Margin="608,281,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" RenderTransformOrigin="1.237,-0.753" FontSize="36">
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="94" Margin="399,248,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="538,248,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="125"/>
+        <TextBox x:Name="TxtUsername1" HorizontalAlignment="Left" Height="62" Margin="676,258,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" RenderTransformOrigin="1.237,-0.753" FontSize="36">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <Label Content="Kleur" HorizontalAlignment="Left" Margin="971,270,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="112"/>
-        <ComboBox x:Name="CbUser1" HorizontalAlignment="Left" Margin="1095,281,0,0" VerticalAlignment="Top" Width="289" Height="60" FontSize="36">
+        <Label Content="Kleur" HorizontalAlignment="Left" Margin="1039,248,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="112"/>
+        <ComboBox x:Name="CbUser1" HorizontalAlignment="Left" Margin="1163,260,0,0" VerticalAlignment="Top" Width="289" Height="60" FontSize="36">
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
@@ -36,17 +36,17 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <Label Content="Speler 1" HorizontalAlignment="Left" Margin="331,192,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503"/>
+        <Label Content="Speler 1" HorizontalAlignment="Left" Margin="239,258,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503"/>
 
-        <Rectangle Fill="White" HorizontalAlignment="Left" Height="248" Margin="331,440,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
-        <Label Content="Naam" HorizontalAlignment="Left" Margin="470,518,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="125"/>
-        <TextBox x:Name="TxtUsername2" HorizontalAlignment="Left" Height="62" Margin="608,529,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" RenderTransformOrigin="1.237,-0.753" FontSize="36">
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="97" Margin="399,347,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="538,360,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="125"/>
+        <TextBox x:Name="TxtUsername2" HorizontalAlignment="Left" Height="62" Margin="676,360,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" RenderTransformOrigin="1.237,-0.753" FontSize="36">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <Label Content="Kleur" HorizontalAlignment="Left" Margin="971,518,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="112"/>
-        <ComboBox x:Name="CbUser2" HorizontalAlignment="Left" Margin="1095,529,0,0" VerticalAlignment="Top" Width="289" Height="60" FontSize="36">
+        <Label Content="Kleur" HorizontalAlignment="Left" Margin="1039,360,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="112"/>
+        <ComboBox x:Name="CbUser2" HorizontalAlignment="Left" Margin="1163,362,0,0" VerticalAlignment="Top" Width="289" Height="60" FontSize="36">
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
@@ -59,17 +59,17 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <Label Content="Speler 2" HorizontalAlignment="Left" Margin="331,440,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="161"/>
+        <Label Content="Speler 2" HorizontalAlignment="Left" Margin="239,360,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="161"/>
 
-        <Rectangle Fill="White" HorizontalAlignment="Left" Height="248" Margin="331,688,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
-        <Label Content="Naam" HorizontalAlignment="Left" Margin="470,766,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="125"/>
-        <TextBox x:Name="TxtUsername3" HorizontalAlignment="Left" Height="62" Margin="608,777,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" RenderTransformOrigin="1.237,-0.753" FontSize="36">
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="97" Margin="399,449,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="538,460,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="125"/>
+        <TextBox x:Name="TxtUsername3" HorizontalAlignment="Left" Height="62" Margin="676,460,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" RenderTransformOrigin="1.237,-0.753" FontSize="36">
             <TextBox.Effect>
                 <DropShadowEffect/>
             </TextBox.Effect>
         </TextBox>
-        <Label Content="Kleur" HorizontalAlignment="Left" Margin="971,766,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="112"/>
-        <ComboBox x:Name="CbUser3" HorizontalAlignment="Left" Margin="1095,777,0,0" VerticalAlignment="Top" Width="289" Height="60" FontSize="36">
+        <Label Content="Kleur" HorizontalAlignment="Left" Margin="1039,449,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="112"/>
+        <ComboBox x:Name="CbUser3" HorizontalAlignment="Left" Margin="1163,462,0,0" VerticalAlignment="Top" Width="289" Height="60" FontSize="36">
             <ComboBox.Effect>
                 <DropShadowEffect/>
             </ComboBox.Effect>
@@ -82,9 +82,75 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <Label Content="Speler 3" HorizontalAlignment="Left" Margin="331,688,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="161"/>
+        <Label Content="Speler 3" HorizontalAlignment="Left" Margin="239,462,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="161"/>
 
         <Button Content="Volgende" HorizontalAlignment="Left" Margin="1544,26,0,0" VerticalAlignment="Top" Width="284" Height="117" Click="Button_Click_1"/>
         <Button Content="Vorige" HorizontalAlignment="Left" Margin="83,26,0,0" VerticalAlignment="Top" Width="281" Height="105" Click="Button_Click"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="94" Margin="399,556,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="538,566,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="125"/>
+        <TextBox x:Name="TxtUsername4" HorizontalAlignment="Left" Height="62" Margin="676,575,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" RenderTransformOrigin="1.237,-0.753" FontSize="36">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <Label Content="Kleur" HorizontalAlignment="Left" Margin="1039,566,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="112"/>
+        <ComboBox x:Name="CbUser4" HorizontalAlignment="Left" Margin="1163,575,0,0" VerticalAlignment="Top" Width="289" Height="60" FontSize="36">
+            <ComboBox.Effect>
+                <DropShadowEffect/>
+            </ComboBox.Effect>
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Fill="{Binding Name}" Width="16" Height="16" Margin="0,2,5,2" />
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label Content="Speler 4" HorizontalAlignment="Left" Margin="239,566,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="97" Margin="399,659,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="538,672,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="125"/>
+        <TextBox x:Name="TxtUsername5" HorizontalAlignment="Left" Height="62" Margin="676,672,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" RenderTransformOrigin="1.237,-0.753" FontSize="36">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <Label Content="Kleur" HorizontalAlignment="Left" Margin="1039,672,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="112"/>
+        <ComboBox x:Name="CbUser5" HorizontalAlignment="Left" Margin="1163,674,0,0" VerticalAlignment="Top" Width="289" Height="60" FontSize="36">
+            <ComboBox.Effect>
+                <DropShadowEffect/>
+            </ComboBox.Effect>
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Fill="{Binding Name}" Width="16" Height="16" Margin="0,2,5,2" />
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label Content="Speler 5" HorizontalAlignment="Left" Margin="239,672,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="161"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="97" Margin="399,761,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
+        <Label Content="Naam" HorizontalAlignment="Left" Margin="538,772,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="125"/>
+        <TextBox x:Name="TxtUsername6" HorizontalAlignment="Left" Height="62" Margin="676,772,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" RenderTransformOrigin="1.237,-0.753" FontSize="36">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <Label Content="Kleur" HorizontalAlignment="Left" Margin="1039,761,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="112"/>
+        <ComboBox x:Name="CbUser6" HorizontalAlignment="Left" Margin="1163,774,0,0" VerticalAlignment="Top" Width="289" Height="60" FontSize="36">
+            <ComboBox.Effect>
+                <DropShadowEffect/>
+            </ComboBox.Effect>
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Fill="{Binding Name}" Width="16" Height="16" Margin="0,2,5,2" />
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Label Content="Speler 6" HorizontalAlignment="Left" Margin="239,774,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="161"/>
     </Grid>
 </Window>

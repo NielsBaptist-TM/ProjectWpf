@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="QuestionWindow" Height="1080" Width="1920">
     <Grid Loaded="Grid_Loaded">
-        <ListBox x:Name="LbPlayers" HorizontalAlignment="Left" Height="398" Margin="42,144,0,0" VerticalAlignment="Top" Width="400"/>
-
+        <DataGrid x:Name="DgvPLayers" HorizontalAlignment="Left" Height="553" Margin="10,10,0,0" VerticalAlignment="Top" Width="361"/>
     </Grid>
 </Window>

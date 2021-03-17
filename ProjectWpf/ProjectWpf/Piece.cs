@@ -10,13 +10,11 @@ namespace ProjectWpf
     {
         private string _name;
         private ConsoleColor _colour;
-
         public Piece(string name, ConsoleColor colour)
         {
             _name = name;
             _colour = colour;
         }
-
         public string name  
         {
             get { return name; } 
