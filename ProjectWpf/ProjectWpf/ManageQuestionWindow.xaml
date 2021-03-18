@@ -15,7 +15,7 @@
                 <Setter Property="FontWeight" Value="Bold"/>
             </Style>
         </Grid.Resources>
-        <Button x:Name="BtnBack1" Content="Vorige" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="281" Height="104"/>
+        <Button x:Name="BtnBack1" Content="Vorige" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="281" Height="104" Click="BtnBack1_Click"/>
         <Label FontSize="36" Content="Vraag" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="423,302,0,0" Height="65" Width="118"/>
         <TextBox FontSize="36" HorizontalAlignment="Left" Height="58" Margin="579,302,0,0" TextWrapping="Wrap" Text="" x:Name="TxtVraag1" VerticalAlignment="Top" Width="864"/>
         <Label FontSize="36" Content="Categorie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="364,382,0,0" Height="65" Width="177"/>

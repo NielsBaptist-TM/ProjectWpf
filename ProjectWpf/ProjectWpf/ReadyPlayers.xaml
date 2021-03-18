@@ -35,6 +35,12 @@
                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
+            <ComboBoxItem Background="Yellow">Geel</ComboBoxItem>
+            <ComboBoxItem Background="Purple" Foreground="White">Paars</ComboBoxItem>
+            <ComboBoxItem Background="Orange">Oranje</ComboBoxItem>
+            <ComboBoxItem Background="Green" Foreground="White">Groen</ComboBoxItem>
+            <ComboBoxItem Background="Blue" Foreground="white">Blauw</ComboBoxItem>
+            <ComboBoxItem Background="Pink">Roze</ComboBoxItem>
         </ComboBox>
         <Label Content="Speler 1" HorizontalAlignment="Left" Margin="239,258,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503"/>
 
@@ -58,6 +64,12 @@
                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
+            <ComboBoxItem Background="Yellow">Geel</ComboBoxItem>
+            <ComboBoxItem Background="Purple" Foreground="White">Paars</ComboBoxItem>
+            <ComboBoxItem Background="Orange">Oranje</ComboBoxItem>
+            <ComboBoxItem Background="Green" Foreground="White">Groen</ComboBoxItem>
+            <ComboBoxItem Background="Blue" Foreground="white">Blauw</ComboBoxItem>
+            <ComboBoxItem Background="Pink">Roze</ComboBoxItem>
         </ComboBox>
         <Label Content="Speler 2" HorizontalAlignment="Left" Margin="239,360,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="161"/>
 
@@ -81,6 +93,12 @@
                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
+            <ComboBoxItem Background="Yellow">Geel</ComboBoxItem>
+            <ComboBoxItem Background="Purple" Foreground="White">Paars</ComboBoxItem>
+            <ComboBoxItem Background="Orange">Oranje</ComboBoxItem>
+            <ComboBoxItem Background="Green" Foreground="White">Groen</ComboBoxItem>
+            <ComboBoxItem Background="Blue" Foreground="white">Blauw</ComboBoxItem>
+            <ComboBoxItem Background="Pink">Roze</ComboBoxItem>
         </ComboBox>
         <Label Content="Speler 3" HorizontalAlignment="Left" Margin="239,462,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="161"/>
 
@@ -106,6 +124,12 @@
                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
+            <ComboBoxItem Background="Yellow">Geel</ComboBoxItem>
+            <ComboBoxItem Background="Purple" Foreground="White">Paars</ComboBoxItem>
+            <ComboBoxItem Background="Orange">Oranje</ComboBoxItem>
+            <ComboBoxItem Background="Green" Foreground="White">Groen</ComboBoxItem>
+            <ComboBoxItem Background="Blue" Foreground="white">Blauw</ComboBoxItem>
+            <ComboBoxItem Background="Pink">Roze</ComboBoxItem>
         </ComboBox>
         <Label Content="Speler 4" HorizontalAlignment="Left" Margin="239,566,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503"/>
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="97" Margin="399,659,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
@@ -128,6 +152,12 @@
                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
+            <ComboBoxItem Background="Yellow">Geel</ComboBoxItem>
+            <ComboBoxItem Background="Purple" Foreground="White">Paars</ComboBoxItem>
+            <ComboBoxItem Background="Orange">Oranje</ComboBoxItem>
+            <ComboBoxItem Background="Green" Foreground="White">Groen</ComboBoxItem>
+            <ComboBoxItem Background="Blue" Foreground="white">Blauw</ComboBoxItem>
+            <ComboBoxItem Background="Pink">Roze</ComboBoxItem>
         </ComboBox>
         <Label Content="Speler 5" HorizontalAlignment="Left" Margin="239,672,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="161"/>
         <Rectangle Fill="White" HorizontalAlignment="Left" Height="97" Margin="399,761,0,0" Stroke="Black" VerticalAlignment="Top" Width="1231" AutomationProperties.Name="Speler 1"/>
@@ -150,6 +180,12 @@
                     </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
+            <ComboBoxItem Background="Yellow">Geel</ComboBoxItem>
+            <ComboBoxItem Background="Purple" Foreground="White">Paars</ComboBoxItem>
+            <ComboBoxItem Background="Orange">Oranje</ComboBoxItem>
+            <ComboBoxItem Background="Green" Foreground="White">Groen</ComboBoxItem>
+            <ComboBoxItem Background="Blue" Foreground="white">Blauw</ComboBoxItem>
+            <ComboBoxItem Background="Pink">Roze</ComboBoxItem>
         </ComboBox>
         <Label Content="Speler 6" HorizontalAlignment="Left" Margin="239,774,0,0" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.222,0.503" Height="84" Width="161"/>
     </Grid>

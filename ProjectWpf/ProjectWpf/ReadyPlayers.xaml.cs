@@ -28,21 +28,7 @@ namespace ProjectWpf
         }
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            //add colours of categories 
-            List<Color> Colours = new List<Color>();
-            {
-                Colours.Add(Color.FromRgb(255, 0, 242));
-                Colours.Add(Color.FromRgb(9, 158, 104));
-                Colours.Add(Color.FromRgb(12, 230, 237));
-                Colours.Add(Color.FromRgb(235, 224, 14));
-                Colours.Add(Color.FromRgb(240, 126, 12));
-                Colours.Add(Color.FromRgb(177, 22, 219));
-            };
-            //Setting content of comboboxes
-            CbUser1.ItemsSource = typeof(
-                Colors).GetProperties();
-            CbUser2.ItemsSource = typeof(Colors).GetProperties();
-            CbUser3.ItemsSource = typeof(Colors).GetProperties();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -60,37 +46,37 @@ namespace ProjectWpf
                 if (!String.IsNullOrEmpty(TxtUsername1.Text))
                 {
                     string username1 = TxtUsername1.Text;
-                    player = new Player(TxtUsername1.Text, CbUser1.SelectedValue.ToString(), 0);
+                    player = new Player(TxtUsername1.Text, CbUser1.Text.ToString(), 0);
                     players.Add(player);
                 }
                 if (!String.IsNullOrEmpty(TxtUsername2.Text))
                 {
                     string username2 = TxtUsername2.Text;
-                    Player player = new Player(TxtUsername2.Text, CbUser2.SelectedValue.ToString(), 0);
+                    Player player = new Player(TxtUsername2.Text, CbUser2.Text.ToString(), 0);
                     players.Add(player);
                 }
                 if (!String.IsNullOrEmpty(TxtUsername3.Text))
                 {
                     string username3 = TxtUsername3.Text; 
-                    Player player = new Player(TxtUsername3.Text, CbUser3.SelectedValue.ToString(), 0);
+                    Player player = new Player(TxtUsername3.Text, CbUser3.Text.ToString(), 0);
                     players.Add(player);
                 }
                 if (!String.IsNullOrEmpty(TxtUsername4.Text))
                 {
                     string username4 = TxtUsername3.Text;
-                    Player player = new Player(TxtUsername4.Text, CbUser4.SelectedValue.ToString(), 0);
+                    Player player = new Player(TxtUsername4.Text, CbUser4.Text.ToString(), 0);
                     players.Add(player);
                 }
                 if (!String.IsNullOrEmpty(TxtUsername5.Text))
                 {
                     string username5 = TxtUsername5.Text;
-                    Player player = new Player(TxtUsername5.Text, CbUser3.SelectedValue.ToString(), 0);
+                    Player player = new Player(TxtUsername5.Text, CbUser5.Text.ToString(), 0);
                     players.Add(player);
                 }
                 if (!String.IsNullOrEmpty(TxtUsername6.Text))
                 {
                     string username6 = TxtUsername6.Text;
-                    Player player = new Player(TxtUsername6.Text, CbUser6.SelectedValue.ToString(), 0);
+                    Player player = new Player(TxtUsername6.Text, CbUser6.Text.ToString(), 0);
                     players.Add(player);
                 }
             }

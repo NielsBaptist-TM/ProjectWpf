@@ -89,7 +89,7 @@ namespace ProjectWpf
             SqlConnection SqlConnection = new SqlConnection("Data Source=r0793266.database.windows.net; Initial Catalog = SQLDBWPF; Persist Security Info = True; User ID = admin2ITF; Password = Password2ITF");
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = SqlConnection;
-            cmd.CommandText = "select distinct(question), categoryId from Question";
+            cmd.CommandText = "select distinct(question), categoryId, rightAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3 from Question";
             SqlConnection.Open();
             SqlDataReader reader = cmd.ExecuteReader();
             if (reader.HasRows)
@@ -97,10 +97,15 @@ namespace ProjectWpf
                 questionList = new List<Question>();
                 while (reader.Read())
                 {
-                    string questionstr = reader["question"].ToString();
+                    string question = reader["question"].ToString();
+                    int categoryId = Convert.ToInt16(reader["categoryId"]);
+                    string rightAnswer = reader["rightAnswer"].ToString();
+                    string wrongAnswer1 = reader["wrongAnswer1"].ToString();
+                    string wrongAnswer2 = reader["wrongAnswer2"].ToString();
+                    string wrongAnswer3 = reader["wrongAnswer3"].ToString();
                     int category = Convert.ToInt32(reader["categoryId"]);
-                    Question question = new Question(category, questionstr);
-                    questionList.Add(question);
+                    Question questionObj = new Question(categoryId, question, rightAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3);
+                    questionList.Add(questionObj);
                 }
             }
             SqlConnection.Close();

@@ -133,12 +133,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\arts_literature.jpg" />
-    <Resource Include="img\entertainment.jpg" />
-    <Resource Include="img\geography.jpg" />
-    <Resource Include="img\history.jpg" />
-    <Resource Include="img\science_nature.jpg" />
-    <Resource Include="img\sports.jpg" />
+    <Resource Include="img\2.jpg" />
+    <Resource Include="img\6.jpg" />
+    <Resource Include="img\5.jpg" />
+    <Resource Include="img\1.jpg" />
+    <Resource Include="img\4.jpg" />
+    <Resource Include="img\3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="img\splashscreen.png" />
