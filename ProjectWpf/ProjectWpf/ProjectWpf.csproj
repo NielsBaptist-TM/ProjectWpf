@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CrudQuestionWindow.xaml.cs">
+      <DependentUpon>CrudQuestionWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ManageQuestionWindow.xaml.cs">
       <DependentUpon>ManageQuestionWindow.xaml</DependentUpon>
     </Compile>
@@ -67,6 +70,10 @@
     <Compile Include="ReadyPlayers.xaml.cs">
       <DependentUpon>ReadyPlayers.xaml</DependentUpon>
     </Compile>
+    <Page Include="CrudQuestionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Highscores.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

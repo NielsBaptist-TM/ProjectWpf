@@ -15,6 +15,17 @@ namespace ProjectWpf
         private string _wrongAnswer1;
         private string _wrongAnswer2;
         private string _wrongAnswer3;
+        private List<Question> _questionList;
+
+        public Question()
+        {
+            select();
+        }
+        public Question(int category, string question)
+        {
+            _category = category;
+            _question = question;
+        }
         public Question(int category, string question, string right_answer, string wrongAnswer1, string wrongAnswer2, string wrongAnswer3)
         {
             _category = category;
@@ -56,6 +67,12 @@ namespace ProjectWpf
             set { _wrongAnswer3 = value; }
         }
 
+        public List<Question> questionList
+        {
+            get { return _questionList; }
+            set { _questionList = value; }
+        }
+
         public void insert(string question, int category)
         {
             SqlConnection SqlConnection = new SqlConnection("Data Source=r0793266.database.windows.net; Initial Catalog = SQLDBWPF; Persist Security Info = True; User ID = admin2ITF; Password = Password2ITF");
@@ -65,6 +82,27 @@ namespace ProjectWpf
                 "values('" + question + "','" + category + "')";
             SqlConnection.Open();
             cmd.ExecuteNonQuery();
+            SqlConnection.Close();
+        }
+        public void select()
+        {
+            SqlConnection SqlConnection = new SqlConnection("Data Source=r0793266.database.windows.net; Initial Catalog = SQLDBWPF; Persist Security Info = True; User ID = admin2ITF; Password = Password2ITF");
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = SqlConnection;
+            cmd.CommandText = "select distinct(question), categoryId from Question";
+            SqlConnection.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.HasRows)
+            {
+                questionList = new List<Question>();
+                while (reader.Read())
+                {
+                    string questionstr = reader["question"].ToString();
+                    int category = Convert.ToInt32(reader["categoryId"]);
+                    Question question = new Question(category, questionstr);
+                    questionList.Add(question);
+                }
+            }
             SqlConnection.Close();
         }
     }

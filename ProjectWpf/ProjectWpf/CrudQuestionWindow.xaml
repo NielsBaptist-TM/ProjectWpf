@@ -1,0 +1,29 @@
+﻿<Window x:Class="ProjectWpf.CrudQuestionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectWpf"
+        mc:Ignorable="d"
+        Title="CrudQuestionWindow" Height="1080" Width="1920" WindowState="Maximized">
+    <Grid Loaded="Grid_Loaded">
+        <Grid.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="#207178"/>
+                <Setter Property="Foreground" Value="#F5E9BE"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+        </Grid.Resources>
+        <ListView x:Name="LvQuestions" HorizontalAlignment="Left" Height="704" Margin="130,137,0,0" VerticalAlignment="Top" Width="1644" SelectionChanged="LvQuestions_SelectionChanged" FontSize="36">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="600" DisplayMemberBinding="{Binding Path=Question}" Header="Vraag"/>
+                    <GridViewColumn Width="600" DisplayMemberBinding="{Binding Path=Category}" Header="Categorie"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="BtnBack" Content="Vorige" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="281" Height="104" Click="BtnBack_Click"/>
+
+    </Grid>
+</Window>

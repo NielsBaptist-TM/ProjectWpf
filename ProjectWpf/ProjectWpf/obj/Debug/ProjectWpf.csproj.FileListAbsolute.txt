@@ -21,3 +21,5 @@ C:\Users\Niels\OneDrive - Thomas More\Jaar 2\Semester 2\WPF\Project\code\Project
 C:\Users\Niels\OneDrive - Thomas More\Jaar 2\Semester 2\WPF\Project\code\ProjectWpf\ProjectWpf\ProjectWpf\obj\Debug\QuestionWindow.baml
 C:\Users\Niels\OneDrive - Thomas More\Jaar 2\Semester 2\WPF\Project\code\ProjectWpf\ProjectWpf\ProjectWpf\obj\Debug\ManageQuestionWindow.g.cs
 C:\Users\Niels\OneDrive - Thomas More\Jaar 2\Semester 2\WPF\Project\code\ProjectWpf\ProjectWpf\ProjectWpf\obj\Debug\ManageQuestionWindow.baml
+C:\Users\Niels\OneDrive - Thomas More\Jaar 2\Semester 2\WPF\Project\code\ProjectWpf\ProjectWpf\ProjectWpf\obj\Debug\CrudQuestionWindow.g.cs
+C:\Users\Niels\OneDrive - Thomas More\Jaar 2\Semester 2\WPF\Project\code\ProjectWpf\ProjectWpf\ProjectWpf\obj\Debug\CrudQuestionWindow.baml

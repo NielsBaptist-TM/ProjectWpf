@@ -35,7 +35,8 @@
         <TextBox FontSize="36" HorizontalAlignment="Left" Height="59" Margin="579,606,0,0" TextWrapping="Wrap" Text="" x:Name="TxtWrong2" VerticalAlignment="Top" Width="864"/>
         <Label FontSize="36" Content="Fout Antwoord #3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="281,680,0,0" Height="65" Width="260"/>
         <TextBox FontSize="36" HorizontalAlignment="Left" Height="60" Margin="579,680,0,0" TextWrapping="Wrap" Text="" x:Name="TxtWrong3" VerticalAlignment="Top" Width="864"/>
-        <Button x:Name="BtnSave" Content="Toevoegen" HorizontalAlignment="Left" Margin="1621,10,0,0" VerticalAlignment="Top" Width="281" Height="104" Click="BtnSave_Click"/>
+        <Button x:Name="BtnSave" Content="+ Toevoegen" HorizontalAlignment="Left" Margin="759,782,0,0" VerticalAlignment="Top" Width="281" Height="104" Click="BtnSave_Click"/>
+        <Button x:Name="BtnAll" Content="Overzicht" HorizontalAlignment="Left" Margin="1621,10,0,0" VerticalAlignment="Top" Width="281" Height="104" Click="BtnAll_Click"/>
 
     </Grid>
 </Window>
