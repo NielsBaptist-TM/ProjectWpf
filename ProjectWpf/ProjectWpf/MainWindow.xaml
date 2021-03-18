@@ -27,8 +27,14 @@
         <Grid.Background>
             <ImageBrush ImageSource="background.jpg"/>
         </Grid.Background>
-        <Button x:Name="BtnNewGame" Grid.Row="0" Click="BtnNewGame_Click" Margin="139,612,1068,166" Background="WhiteSmoke" Foreground="Black">Nieuw spel</Button>
-        <Button x:Name="BtnHighscores" Click="BtnHighscores_Click" Margin="982,606,199,166" RenderTransformOrigin="0.5,0.5" Foreground="Black" Background="White">
+        <Button x:Name="BtnNewGame" Grid.Row="0" Click="BtnNewGame_Click" Margin="307,656,1290,208" Background="WhiteSmoke" Foreground="Black">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect> Nieuw spel</Button>
+        <Button x:Name="BtnHighscores" Click="BtnHighscores_Click" Margin="810,658,783,208" RenderTransformOrigin="0.5,0.5" Foreground="Black" Background="White">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -39,5 +45,18 @@
             </Button.RenderTransform> Highscores
         </Button>
         <Label Content="Trivial pursuit: The game" FontSize="125" Margin="139,205,172,632" FontFamily="Verdana" RenderTransformOrigin="0.506,1.29" Foreground="White"/>
+        <Button x:Name="BtnQuestions" Margin="1288,660,311,214" RenderTransformOrigin="0.5,0.5" Foreground="Black" Background="White" Content="Vragen" Click="BtnQuestions_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.1"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </Window>

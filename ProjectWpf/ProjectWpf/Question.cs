@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace ProjectWpf
 {
     class Question
     {
-        private string _category;
+        private int _category;
         private string _question;
         private string _right_answer;
         private string _wrongAnswer1;
         private string _wrongAnswer2;
         private string _wrongAnswer3;
-        public Question(string category, string question, string right_answer, string wrongAnswer1, string wrongAnswer2, string wrongAnswer3)
+        public Question(int category, string question, string right_answer, string wrongAnswer1, string wrongAnswer2, string wrongAnswer3)
         {
             _category = category;
             _question = question;
@@ -22,8 +23,9 @@ namespace ProjectWpf
             _wrongAnswer1 = wrongAnswer1;
             _wrongAnswer2 = wrongAnswer2;
             _wrongAnswer3 = wrongAnswer3;
+            insert(question, category);
         }
-        public string category
+        public int category
         {
             get { return _category; }
             set { _category = value; }
@@ -52,6 +54,18 @@ namespace ProjectWpf
         {
             get { return _wrongAnswer3; }
             set { _wrongAnswer3 = value; }
+        }
+
+        public void insert(string question, int category)
+        {
+            SqlConnection SqlConnection = new SqlConnection("Data Source=r0793266.database.windows.net; Initial Catalog = SQLDBWPF; Persist Security Info = True; User ID = admin2ITF; Password = Password2ITF");
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = SqlConnection;
+            cmd.CommandText = "insert into Question (question, categoryId) " +
+                "values('" + question + "','" + category + "')";
+            SqlConnection.Open();
+            cmd.ExecuteNonQuery();
+            SqlConnection.Close();
         }
     }
 }

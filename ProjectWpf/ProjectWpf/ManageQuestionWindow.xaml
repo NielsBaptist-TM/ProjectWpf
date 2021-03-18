@@ -1,0 +1,41 @@
+﻿<Window x:Class="ProjectWpf.ManageQuestionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectWpf"
+        mc:Ignorable="d"
+        Title="ManageQuestionWindow" Height="1080" Width="1920" WindowState="Maximized">
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="#207178"/>
+                <Setter Property="Foreground" Value="#F5E9BE"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+        </Grid.Resources>
+        <Button x:Name="BtnBack1" Content="Vorige" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="281" Height="104"/>
+        <Label FontSize="36" Content="Vraag" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="423,302,0,0" Height="65" Width="118"/>
+        <TextBox FontSize="36" HorizontalAlignment="Left" Height="58" Margin="579,302,0,0" TextWrapping="Wrap" Text="" x:Name="TxtVraag1" VerticalAlignment="Top" Width="864"/>
+        <Label FontSize="36" Content="Categorie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="364,382,0,0" Height="65" Width="177"/>
+        <ComboBox FontSize="36" x:Name="CbCategorie" HorizontalAlignment="Left" Margin="579,382,0,0" VerticalAlignment="Top" Width="864" Height="55">
+            <ComboBoxItem>1 - Geschiedenis</ComboBoxItem>
+            <ComboBoxItem>2- Kunst en Literatuur</ComboBoxItem>
+            <ComboBoxItem>3 - Sport en vrije tijd</ComboBoxItem>
+            <ComboBoxItem>4 - Wetenschap en natuur</ComboBoxItem>
+            <ComboBoxItem>5 - Aardrijkskunde</ComboBoxItem>
+            <ComboBoxItem>6 - Entertainment</ComboBoxItem>
+        </ComboBox>
+        <TextBox FontSize="36" HorizontalAlignment="Left" Height="59" Margin="579,462,0,0" TextWrapping="Wrap" Text="" x:Name="TxtAnswer" VerticalAlignment="Top" Width="864"/>
+        <Label FontSize="36" Content="Juist Antwoord" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="281,462,0,0" Height="64" Width="260"/>
+        <Label FontSize="36" Content="Fout Antwoord #1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="281,536,0,0" Height="65" Width="260"/>
+        <TextBox FontSize="36" HorizontalAlignment="Left" Height="60" Margin="579,536,0,0" TextWrapping="Wrap" Text="" x:Name="TxtWrong1" VerticalAlignment="Top" Width="864"/>
+        <Label FontSize="36" Content="Fout Antwoord #2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="281,606,0,0" Height="64" Width="260"/>
+        <TextBox FontSize="36" HorizontalAlignment="Left" Height="59" Margin="579,606,0,0" TextWrapping="Wrap" Text="" x:Name="TxtWrong2" VerticalAlignment="Top" Width="864"/>
+        <Label FontSize="36" Content="Fout Antwoord #3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="281,680,0,0" Height="65" Width="260"/>
+        <TextBox FontSize="36" HorizontalAlignment="Left" Height="60" Margin="579,680,0,0" TextWrapping="Wrap" Text="" x:Name="TxtWrong3" VerticalAlignment="Top" Width="864"/>
+        <Button x:Name="BtnSave" Content="Toevoegen" HorizontalAlignment="Left" Margin="1621,10,0,0" VerticalAlignment="Top" Width="281" Height="104" Click="BtnSave_Click"/>
+
+    </Grid>
+</Window>

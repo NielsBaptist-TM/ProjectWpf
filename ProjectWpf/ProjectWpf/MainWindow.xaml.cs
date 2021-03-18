@@ -55,5 +55,13 @@ namespace ProjectWpf
             cmd.ExecuteNonQuery();
             SqlConnection.Close();
         }
+
+        private void BtnQuestions_Click(object sender, RoutedEventArgs e)
+        {
+            ManageQuestionWindow ManageQuestionWindow = new ManageQuestionWindow();
+            ManageQuestionWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            ManageQuestionWindow.Show();
+            this.Close();
+        }
     }
 }

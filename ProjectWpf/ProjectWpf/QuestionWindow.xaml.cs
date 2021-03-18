@@ -49,8 +49,6 @@ namespace ProjectWpf
                     string name = reader["name"].ToString();
                     string colour = reader["colour"].ToString();
                     int turns = Convert.ToInt32(reader["turns"]);
-                    /*LbPlayers.Items.Add(name + "\t" + colour + "\t" + turns);*/
-
                     var row = new { Name = name, Colour = colour, Turns = turns };
                     LbPlayers.Items.Add(row);
                 }

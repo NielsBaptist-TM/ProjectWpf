@@ -57,7 +57,7 @@ namespace ProjectWpf
             this.Close();
         }
 
-        private void LbHighscores_SelectionChanged()
+        private void LbHighscores_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
